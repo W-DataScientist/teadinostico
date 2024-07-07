@@ -315,7 +315,8 @@ st.write("---")
 
 if st.button("Diagnosticar"):
     total_score = sum(pontuacao)
-    
+
+    st.write("---")
     st.subheader("Resultado do Diagnóstico")
     
     if total_score >= 60:
