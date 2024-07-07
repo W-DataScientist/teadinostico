@@ -12,13 +12,13 @@ age = st.slider("Idade:", min_value=1, max_value=60, step=1, key="age")
 st.subheader("Questionário")
 
 questions = [
-    "---",
+    "-",
     "1. Evita contato visual com outras pessoas?",
     "Exemplo: Evita olhar diretamente para os olhos de outras pessoas durante uma conversa.",
-    "---",
+    "-",
     "2. Dificuldade em entender as emoções e expressões faciais dos outros?",
     "Exemplo: Não consegue identificar quando alguém está triste, feliz ou irritado apenas pela expressão facial.",
-    "---",
+    "-",
     "3. Dificuldade em iniciar ou manter conversas?",
     "Exemplo: Tem dificuldade em iniciar uma conversa com alguém novo ou em mantê-la por muito tempo.",
     "---",
