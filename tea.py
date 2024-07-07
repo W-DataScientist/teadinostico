@@ -1,8 +1,10 @@
 import streamlit as st
 
-st.title("Questionário para pré diagnostico do (TEA)")
+st.title("Questionário de Diagnóstico de Transtorno do Espectro Autista (TEA)")
 
-st.write("São 30 perguntas relacionadas ao TEA. Ao final, você poderá clicar no botão 'Diagnosticar' para obter o pré-diagnostico.")
+st.write("Olá! Vamos começar com um questionário de 30 perguntas relacionadas ao TEA. Ao final, você poderá clicar no botão 'Diagnosticar' para obter o resultado.")
+
+st.subheader("Informações Pessoais")
 
 sex = st.radio("Sexo:", ("Masculino", "Feminino"), key="sex")
 age = st.slider("Idade:", min_value=1, max_value=60, step=1, key="age")
@@ -50,16 +52,17 @@ for i, question in enumerate(questions):
 if st.button("Diagnosticar"):
     total_score = sum([2 if answer == "Muito" else 1 if answer == "Pouco" else 0 for answer in answers])
     
-    if total_score >= 60:
-        st.write("Resultado: Provável diagnóstico de TEA de nível 3.")
-        st.write("Nível 3: Requer muito apoio. Dificuldades graves de comunicação social que causam prejuízos graves no funcionamento. Comportamentos restritos e repetitivos causam sofrimento extremo.")
-    elif total_score >= 40:
-        st.write("Resultado: Provável diagnóstico de TEA de nível 2.")
-        st.write("Nível 2: Requer apoio substancial. Dificuldades notáveis de comunicação social. Comportamentos restritos e repetitivos aparecem com frequência e são evidentes para observadores casuais.")
-    elif total_score >= 20:
-        st.write("Resultado: Provável diagnóstico de TEA de nível 1.")
-        st.write("Nível 1: Requer apoio. Dificuldades de comunicação social sem ajuda in situ. Comportamentos restritos e repetitivos causam interferência significativa no funcionamento em um ou mais contextos.")
-    else:
-        st.write("Resultado: Baixa probabilidade de TEA.")
+    with st.sidebar:
+        if total_score >= 60:
+            st.write("Resultado: Provável diagnóstico de TEA de nível 3.")
+            st.write("Nível 3: Requer muito apoio. Dificuldades graves de comunicação social que causam prejuízos graves no funcionamento. Comportamentos restritos e repetitivos causam sofrimento extremo.")
+        elif total_score >= 40:
+            st.write("Resultado: Provável diagnóstico de TEA de nível 2.")
+            st.write("Nível 2: Requer apoio substancial. Dificuldades notáveis de comunicação social. Comportamentos restritos e repetitivos aparecem com frequência e são evidentes para observadores casuais.")
+        elif total_score >= 20:
+            st.write("Resultado: Provável diagnóstico de TEA de nível 1.")
+            st.write("Nível 1: Requer apoio. Dificuldades de comunicação social sem ajuda in situ. Comportamentos restritos e repetitivos causam interferência significativa no funcionamento em um ou mais contextos.")
+        else:
+            st.write("Resultado: Baixa probabilidade de TEA.")
         
     st.write(f"Sua pontuação total é: {total_score}")
