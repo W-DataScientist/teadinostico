@@ -313,7 +313,7 @@ else:
     pontuacao.append(2)
 st.write("---")
 
-st.subheader("31. Tem dificuldade de receber um "NÃO" e se agride?")
+st.subheader("31. Tem dificuldade de receber um 'NÃO' e se agride?")
 resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q31")
 if resposta == "Não":
     pontuacao.append(0)
