@@ -12,6 +12,7 @@ age = st.slider("Idade:", min_value=1, max_value=60, step=1, key="age")
 st.subheader("Questionário")
 
 questions = [
+    "---",
     "1. Evita contato visual com outras pessoas?",
     "Exemplo: Evita olhar diretamente para os olhos de outras pessoas durante uma conversa.",
     "---",
