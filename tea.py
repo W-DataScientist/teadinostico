@@ -1,10 +1,10 @@
 import streamlit as st
 
-st.title("Questionário de Diagnóstico de Transtorno do Espectro Autista (TEA)")
+st.title("Pré Diagnóstico de Transtorno do Espectro Autista (TEA)")
 
-st.write("Olá! Vamos começar com um questionário de 30 perguntas relacionadas ao TEA. Ao final, você poderá clicar no botão 'Diagnosticar' para obter o resultado.")
+st.write("Ao final, você poderá clicar no botão 'Diagnosticar' para obter o resultado.")
 
-st.subheader("Informações Pessoais")
+st.subheader("Informações")
 
 sex = st.radio("Sexo:", ("Masculino", "Feminino"), key="sex")
 age = st.slider("Idade:", min_value=1, max_value=60, step=1, key="age")
