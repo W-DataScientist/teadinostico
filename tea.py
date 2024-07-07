@@ -334,4 +334,4 @@ if st.button("Diagnosticar"):
         else:
             st.write("Diagnóstico: Baixa probabilidade de TEA.")
             st.write("Considerações:")
-            st.write("Sua
+            st.write("Baixa probabilidade de TEA")
