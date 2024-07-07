@@ -1,18 +1,18 @@
 import streamlit as st
 
-st.title("Questiorário para o pré diagnóstico do (TEA)")
+st.title("Questionário de Diagnóstico de Transtorno do Espectro Autista (TEA)")
 
 st.write("Olá! Vamos começar com um questionário de 30 perguntas relacionadas ao TEA. Ao final, você poderá clicar no botão 'Diagnosticar' para obter o resultado.")
 
 st.subheader("Informações Pessoais")
 
 sex = st.radio("Sexo:", ("Masculino", "Feminino"), key="sex")
-age = st.number_input("Idade:", min_value=0, step=1, key="age")
+age = st.slider("Idade:", min_value=0, max_value=100, step=1, key="age")
 
 st.subheader("Questionário")
 
 questions = [
-    "1 - Dificuldade em se comunicar e interagir com outras pessoas?",
+    "1. Dificuldade em se comunicar e interagir com outras pessoas?",
     "2. Dificuldade em entender e responder a expressões faciais e emoções dos outros?",
     "3. Dificuldade em iniciar ou manter conversas?",
     "4. Dificuldade em entender e seguir instruções simples?",
