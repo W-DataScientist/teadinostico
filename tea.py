@@ -7,7 +7,7 @@ st.write("Olá! Vamos começar com um questionário de 30 perguntas relacionadas
 st.subheader("Informações Pessoais")
 
 sex = st.radio("Sexo:", ("Masculino", "Feminino"), key="sex")
-age = st.slider("Idade:", min_value=1, max_value=60, step=1, key="age")
+age = st.slider("Idade:", min_value=1, max_value=20, step=1, key="age")
 
 st.subheader("Questionário")
 
@@ -213,7 +213,7 @@ else:
     pontuacao.append(2)
 st.write("---")
 
-st.subheader("21. Dificuldade em entender instruções verbais complexas?")
+st.subheader("21. Coloca os brinquedos em filas ou todos um em cima do outro?")
 resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q21")
 if resposta == "Não":
     pontuacao.append(0)
@@ -283,7 +283,7 @@ else:
     pontuacao.append(2)
 st.write("---")
 
-st.subheader("28. Dificuldade em lidar com mudanças inesperadas na rotina?")
+st.subheader("28. Anda na ponta dos pés?")
 resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q28")
 if resposta == "Não":
     pontuacao.append(0)
@@ -313,21 +313,61 @@ else:
     pontuacao.append(2)
 st.write("---")
 
+st.subheader("31. Tem dificuldade de receber um "NÃO" e se agride?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q31")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("32. Gosta de objetos ou brinquedos que gira e fica horas observando?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q32")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("33. De forma inesperada deixa de fazer algo que comumente fazia?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q33")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("34. Aponta para o que quer ao inves de falar?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q34")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
 if st.button("Diagnosticar"):
     total_score = sum(pontuacao)
 
     st.write("---")
     st.subheader("Resultado do Diagnóstico")
     
-    if total_score >= 60:
+    if total_score >= 65:
         st.write("Provável TEA de nível 3.")
         st.write("Considerações:")
         st.write("Requer muito apoio. Dificuldades graves de comunicação social que causam prejuízos graves no funcionamento. Comportamentos restritos e repetitivos causam sofrimento extremo.")
-    elif total_score >= 40:
+    elif total_score >= 45:
         st.write("Provável TEA de nível 2.")
         st.write("Considerações:")
         st.write("Requer apoio substancial. Dificuldades notáveis de comunicação social. Comportamentos restritos e repetitivos aparecem com frequência e são evidentes para observadores casuais.")
-    elif total_score >= 20:
+    elif total_score >= 22:
         st.write("Provável TEA de nível 1.")
         st.write("Considerações:")
         st.write("Requer apoio. Dificuldades de comunicação social sem ajuda in situ. Comportamentos restritos e repetitivos causam interferência significativa no funcionamento em um ou mais contextos.")
