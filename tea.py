@@ -14,6 +14,7 @@ st.subheader("Questionário")
 pontuacao = []
 
 st.subheader("1. Evita contato visual com outras pessoas?")
+st.write("Nível 3")
 resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q1")
 if resposta == "Não":
     pontuacao.append(0)
