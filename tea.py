@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Pré Diagnóstico de Transtorno do Espectro Autista (TEA)")
+st.title("Pré Diagnóstico do (TEA)")
 
 st.write("Ao final, você poderá clicar no botão 'Diagnosticar' para obter o resultado.")
 
