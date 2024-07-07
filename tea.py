@@ -11,46 +11,310 @@ age = st.slider("Idade:", min_value=1, max_value=60, step=1, key="age")
 
 st.subheader("Questionário")
 
-questions = [
-    "1 - Evita contato visual com outras pessoas?",
-    "2 - Dificuldade em entender as emoções e expressões faciais dos outros?",
-    "3 - Dificuldade em iniciar ou manter conversas?",
-    "4 - Interesses restritos ou obsessivos por determinados temas?",
-    "5 - Apresenta comportamentos repetitivos ou ritualizados?",
-    "6 - Sensibilidade a determinados sons, texturas ou luzes?",
-    "7 - Dificuldade em lidar com mudanças na rotina?",
-    "8 - Dificuldade em entender piadas, metáforas ou sarcasmo?",
-    "9 - Dificuldade em compreender regras sociais e se adaptar a diferentes contextos?",
-    "10 - Dificuldade em se colocar no lugar dos outros?",
-    "11 - Dificuldade em expressar suas próprias emoções?",
-    "12 - Dificuldade em entender instruções complexas?",
-    "13 - Dificuldade em se organizar e planejar tarefas?",
-    "14 - Dificuldade em lidar com situações inesperadas?",
-    "15 - Dificuldade em manter a atenção por longos períodos?",
-    "16 - Dificuldade em se adaptar a ambientes barulhentos ou com muitos estímulos?",
-    "17 - Dificuldade em entender expressões faciais e linguagem corporal?",
-    "18 - Dificuldade em fazer amizades e manter relacionamentos?",
-    "19 - Dificuldade em entender e seguir regras sociais?",
-    "20 - Dificuldade em lidar com mudanças de rotina ou transições?",
-    "21 - Dificuldade em entender instruções verbais complexas?",
-    "22 - Dificuldade em se concentrar em tarefas que não lhe interessam?",
-    "23 - Dificuldade em entender piadas, metáforas ou sarcasmo?",
-    "24 - Dificuldade em se adaptar a ambientes com muitas pessoas?",
-    "25 - Dificuldade em entender e responder a perguntas?",
-    "26 - Dificuldade em lidar com situações sociais desconhecidas?",
-    "27 - Dificuldade em entender e seguir regras sociais implícitas?",
-    "28 - Dificuldade em lidar com mudanças inesperadas na rotina?",
-    "29 - Dificuldade em entender e interpretar as emoções dos outros?",
-    "30 - Dificuldade em se comunicar de forma efetiva?",
-]
+pontuacao = []
 
-answers = []
-for i, question in enumerate(questions):
-    answer = st.radio(question, ("Não", "Pouco", "Muito"), key=f"question_{i}")
-    answers.append(answer)
+st.subheader("1. Evita contato visual com outras pessoas?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q1")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("2. Dificuldade em entender as emoções e expressões faciais dos outros?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q2")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("3. Dificuldade em iniciar ou manter conversas?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q3")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("4. Interesses restritos ou obsessivos por determinados temas?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q4")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("5. Apresenta comportamentos repetitivos ou ritualizados?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q5")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("6. Sensibilidade a determinados sons, texturas ou luzes?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q6")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("7. Dificuldade em lidar com mudanças na rotina?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q7")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("8. Dificuldade em entender piadas, metáforas ou sarcasmo?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q8")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("9. Dificuldade em compreender regras sociais e se adaptar a diferentes contextos?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q9")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("10. Dificuldade em se colocar no lugar dos outros?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q10")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("11. Dificuldade em expressar suas próprias emoções?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q11")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("12. Dificuldade em entender instruções complexas?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q12")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("13. Dificuldade em se organizar e planejar tarefas?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q13")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("14. Dificuldade em lidar com situações inesperadas?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q14")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("15. Dificuldade em manter a atenção por longos períodos?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q15")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("16. Dificuldade em se adaptar a ambientes barulhentos ou com muitos estímulos?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q16")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("17. Dificuldade em entender expressões faciais e linguagem corporal?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q17")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("18. Dificuldade em fazer amizades e manter relacionamentos?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q18")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("19. Dificuldade em entender e seguir regras sociais?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q19")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("20. Dificuldade em lidar com mudanças de rotina ou transições?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q20")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("21. Dificuldade em entender instruções verbais complexas?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q21")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("22. Dificuldade em se concentrar em tarefas que não lhe interessam?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q22")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("23. Dificuldade em entender piadas, metáforas ou sarcasmo?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q23")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("24. Dificuldade em se adaptar a ambientes com muitas pessoas?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q24")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("25. Dificuldade em entender e responder a perguntas?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q25")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("26. Dificuldade em lidar com situações sociais desconhecidas?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q26")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("27. Dificuldade em entender e seguir regras sociais implícitas?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q27")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("28. Dificuldade em lidar com mudanças inesperadas na rotina?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q28")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("29. Dificuldade em entender e interpretar as emoções dos outros?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q29")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
+
+st.subheader("30. Dificuldade em se comunicar de forma efetiva?")
+resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q30")
+if resposta == "Não":
+    pontuacao.append(0)
+elif resposta == "Pouco":
+    pontuacao.append(1)
+else:
+    pontuacao.append(2)
+st.write("---")
 
 if st.button("Diagnosticar"):
-    total_score = sum([2 if answer == "Muito" else 1 if answer == "Pouco" else 0 for answer in answers])
+    total_score = sum(pontuacao)
     
     with st.sidebar:
         st.subheader("Resultado do Diagnóstico")
@@ -70,6 +334,4 @@ if st.button("Diagnosticar"):
         else:
             st.write("Diagnóstico: Baixa probabilidade de TEA.")
             st.write("Considerações:")
-            st.write("Sua pontuação indica uma baixa probabilidade de Transtorno do Espectro Autista.")
-        
-        st.write(f"Sua pontuação total é: {total_score}")
+            st.write("Sua
