@@ -79,6 +79,8 @@ for i, question in enumerate(questions):
     if i % 2 == 0:
         answer = st.radio(questions[i], ("Não", "Pouco", "Muito"), key=f"question_{i}")
         answers.append(answer)
+    else:
+        st.write(questions[i])
 
 if st.button("Diagnosticar"):
     total_score = sum([2 if answer == "Muito" else 1 if answer == "Pouco" else 0 for answer in answers])
