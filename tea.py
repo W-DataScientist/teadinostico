@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Questionário de Diagnóstico de Transtorno do Espectro Autista (TEA)")
+st.title("Questiorário para o pré diagnóstico do (TEA)")
 
 st.write("Olá! Vamos começar com um questionário de 30 perguntas relacionadas ao TEA. Ao final, você poderá clicar no botão 'Diagnosticar' para obter o resultado.")
 
