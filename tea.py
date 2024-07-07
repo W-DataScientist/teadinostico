@@ -7,7 +7,7 @@ st.write("Olá! Vamos começar com um questionário de 30 perguntas relacionadas
 st.subheader("Informações Pessoais")
 
 sex = st.radio("Sexo:", ("Masculino", "Feminino"), key="sex")
-age = st.slider("Idade:", min_value=0, max_value=100, step=1, key="age")
+age = st.slider("Idade:", min_value=1, max_value=60, step=1, key="age")
 
 st.subheader("Questionário")
 
