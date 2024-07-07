@@ -306,4 +306,4 @@ if len(pontuacao) == 30:
             st.write("Com base nas respostas fornecidas e informações do paciente, ele apresenta sintomas moderados de Transtorno do Espectro Autista (TEA) para um homem de sua idade.")
         elif genero == "Masculino" and idade >= 18:
             st.write("Com base nas respostas fornecidas e informações do paciente, ele apresenta sintomas moderados de Transtorno do Espectro Autista (TEA) para um homem adulto.")
-        elif genero
+        elif gen
