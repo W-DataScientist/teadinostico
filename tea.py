@@ -333,7 +333,7 @@ else:
     pontuacao.append(2)
 st.write("---")
 
-st.subheader("33. De forma inesperada deixa de fazer algo que comumente fazia?")
+st.subheader("33. De forma inesperada deixou de fazer algo que comumente fazia?")
 resposta = st.radio("", ("Não", "Pouco", "Muito"), key="q33")
 if resposta == "Não":
     pontuacao.append(0)
