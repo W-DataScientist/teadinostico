@@ -13,7 +13,6 @@ st.subheader("Questionário")
 
 questions = [
     "1. Evita contato visual com outras pessoas?",
-    "---"
     "2. Dificuldade em entender as emoções e expressões faciais dos outros?",
     "3. Dificuldade em iniciar ou manter conversas?",
     "4. Interesses restritos ou obsessivos por determinados temas?",
