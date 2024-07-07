@@ -12,7 +12,7 @@ age = st.number_input("Idade:", min_value=0, step=1, key="age")
 st.subheader("Questionário")
 
 questions = [
-    "1. Dificuldade em se comunicar e interagir com outras pessoas?",
+    "1 - Dificuldade em se comunicar e interagir com outras pessoas?",
     "2. Dificuldade em entender e responder a expressões faciais e emoções dos outros?",
     "3. Dificuldade em iniciar ou manter conversas?",
     "4. Dificuldade em entender e seguir instruções simples?",
