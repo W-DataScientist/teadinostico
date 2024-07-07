@@ -320,18 +320,18 @@ if st.button("Diagnosticar"):
     st.subheader("Resultado do Diagnóstico")
     
     if total_score >= 60:
-        st.write("Diagnóstico: Provável TEA de nível 3.")
+        st.write("Provável TEA de nível 3.")
         st.write("Considerações:")
         st.write("Nível 3: Requer muito apoio. Dificuldades graves de comunicação social que causam prejuízos graves no funcionamento. Comportamentos restritos e repetitivos causam sofrimento extremo.")
     elif total_score >= 40:
-        st.write("Diagnóstico: Provável TEA de nível 2.")
+        st.write("Provável TEA de nível 2.")
         st.write("Considerações:")
         st.write("Nível 2: Requer apoio substancial. Dificuldades notáveis de comunicação social. Comportamentos restritos e repetitivos aparecem com frequência e são evidentes para observadores casuais.")
     elif total_score >= 20:
-        st.write("Diagnóstico: Provável TEA de nível 1.")
+        st.write("Provável TEA de nível 1.")
         st.write("Considerações:")
         st.write("Nível 1: Requer apoio. Dificuldades de comunicação social sem ajuda in situ. Comportamentos restritos e repetitivos causam interferência significativa no funcionamento em um ou mais contextos.")
     else:
-        st.write("Diagnóstico: Baixa probabilidade de TEA.")
+        st.write("Baixa probabilidade de TEA.")
         st.write("Considerações:")
         st.write("Baixa probabilidade de TEA")
